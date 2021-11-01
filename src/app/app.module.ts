@@ -30,3 +30,4 @@ import { HighlightDirective } from './highlight.directive';
   bootstrap: [AppComponent,DirComponent,DatabindingComponent]
 })
 export class AppModule { }
+  
