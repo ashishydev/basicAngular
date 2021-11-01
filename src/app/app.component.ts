@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  yourName="Ashish";
+  disabledBox=true;
+  getName(name1:string){
+    alert(name1)
+  };
+  enableButton(){
+    this.disabledBox=false;
+  }
+  shows=false;
 }

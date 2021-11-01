@@ -1,0 +1,44 @@
+
+<h3>If</h3>
+<input type="number" [(ngModel)]="num"/>
+<div *ngIf="num%2==0">Even Number</div>
+<div *ngIf="num%2>0">Odd Number</div>
+
+
+<h3>If ELse</h3>
+<div *ngIf="num%2==0 then divif ;else divelse "></div>
+
+<ng-template #divif>number is Even</ng-template>
+<ng-template #divelse>number is Odd</ng-template>
+
+<h3>Ng Switch</h3>
+<input type="text" [(ngModel)]="alphabet">
+<div [ngSwitch]="alphabet">
+    <div *ngSwitchCase="'a'">Vowel</div>
+    <div *ngSwitchCase="'e'">Vowel</div>
+    <div *ngSwitchCase="'i'">Vowel</div>
+    <div *ngSwitchCase="'o'">Vowel</div>
+    <div *ngSwitchCase="'u'">Vowel</div>
+    <div *ngSwitchDefault>Not a Vowel</div>
+</div>
+
+<h3>For loop</h3>
+
+<ul> <div *ngFor="let item of colors let i=index">
+   {{i+1}} {{item}}
+</div>
+</ul>
+ <select [(ngModel)]="color">
+    <option value="''">--select--</option>
+     <option *ngFor="let item of colors" [value]="item">
+         {{item}}
+     </option>
+ </select>
+<p [ngClass]="{'red' : color == 'red' ? true:false}">
+   {{color}} this is my ngclass example
+</p>
+<p [ngStyle]="{backgroundColor: color}"> {{color}}this is style para</p>
+
+
+
+
