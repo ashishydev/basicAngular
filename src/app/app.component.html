@@ -36,12 +36,17 @@
             <a class="nav-link"[routerLink]="['/']" >Data Binding</a>
             <a class="nav-link"[routerLink]="['/dir']" >Directive</a>
             <a class="nav-link"[routerLink]="['/pipe']" >Pipe</a>
+            <a class="nav-link"[routerLink]="['/about',4]">About-Q</a>
+            <a class="nav-link"[routerLink]="['/about' ,{name:'Ashish' ,Add:'Mumbai'}]">About</a>
+            <a class="nav-link" [routerLink]="['/inheritence']">Inheritence</a>
+            <a class="nav-link" [routerLink]="['/detail']">Details</a>
+            <a class="nav-link"[routerLink]="['/contact']" [queryParams]="{name:'Ashish',Add:'Mumbai'}">Contact</a>
             <a class="nav-link"[routerLink]="['/*']" ></a>
 
          
         
     </ul>
 </nav>
-<div>
+<div class="container"   >
     <router-outlet></router-outlet>
 </div>

@@ -13,7 +13,15 @@ import { HighlightDirective } from './highlight.directive';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ReversePipe } from './reverse.pipe';
 import { PipeComponent } from './pipe/pipe.component';
- 
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PasswordComponent } from './password/password.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+ import{HttpClientModule} from '@angular/common/http';
+import { DetailsComponent } from './details/details.component';
+import { MasterComponent } from './master/master.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,12 +33,21 @@ import { PipeComponent } from './pipe/pipe.component';
     NotfoundComponent,
     ReversePipe,
     PipeComponent,
+    AboutComponent,
+    ContactComponent,
+    ProfileComponent,
+    PasswordComponent,
+    ParentComponent,
+    ChildComponent,
+    DetailsComponent,
+    MasterComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UsersModule,
-    FormsModule,RouterModule
+    FormsModule,RouterModule,HttpClientModule
      ],
   providers: [],
   bootstrap: [AppComponent]
