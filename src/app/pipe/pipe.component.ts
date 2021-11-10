@@ -9,9 +9,9 @@ export class PipeComponent implements OnInit {
 
   constructor() { 
     this.emplyoeeList=[{name:'Ashish',Add:'Mumbai',ID:123,DOJ:new Date()},
-                        {name:'Arun',Add:'Mumbai',ID:15423,DOJ:'09122020'},
-                        {name:'Anita',Add:'Mumbai',ID:124353,DOJ:'09122020'},
-                        {name:'Kam',Add:'Mumbai',ID:12533,DOJ:'09122020'}]
+                        {name:'Arun',Add:'Mumbai',ID:15423,DOJ:new Date()},
+                        {name:'Anita',Add:'Mumbai',ID:124353,DOJ:new Date()},
+                        {name:'Kam',Add:'Mumbai',ID:12533,DOJ:new Date()}]
   }
 
   ngOnInit(): void {
