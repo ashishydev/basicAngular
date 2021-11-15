@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ChildComponent } from './child/child.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContentprojectionComponent } from './contentprojection/contentprojection.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DetailsComponent } from './details/details.component';
 import { DirComponent } from './dir/dir.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'inheritence',component:ChildComponent},
   {path:'detail',component:MasterComponent},
+  {path:'contentprojection',component:ContentprojectionComponent},
   {path:'contact',component:ContactComponent ,children:[
     {path:'password',component:PasswordComponent},
     {path:'profile',component:ProfileComponent},

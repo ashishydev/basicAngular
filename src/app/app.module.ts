@@ -21,7 +21,9 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
  import{HttpClientModule} from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
-import { MasterComponent } from './master/master.component'
+import { MasterComponent } from './master/master.component';
+import { FormComponent } from './form/form.component';
+import { ContentprojectionComponent } from './contentprojection/contentprojection.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,8 @@ import { MasterComponent } from './master/master.component'
     ChildComponent,
     DetailsComponent,
     MasterComponent,
+    FormComponent,
+    ContentprojectionComponent,
     
   ],
   imports: [

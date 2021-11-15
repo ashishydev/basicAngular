@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output ,EventEmitter} from '@angular/core';
+import { Component, Input, OnInit, Output ,EventEmitter, OnChanges, DoCheck} from '@angular/core';
 // import { EventEmitter } from 'stream';
 
 @Component({
@@ -7,13 +7,20 @@ import { Component, Input, OnInit, Output ,EventEmitter} from '@angular/core';
   styles: [
   ]
 })
-export class DetailsComponent implements OnInit {
+export class DetailsComponent implements OnInit , OnChanges,DoCheck{
 @Input() myCompany:string='';
 @Output() myMessage:EventEmitter<string>=new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
   
+  }
+  ngOnChanges():void{
+    console.log('OnChanges called');
+    
+  }
+  ngDoCheck():void{
+    
   }
   SendData() {
     this.myMessage.emit('Hi, From Details Component!');
